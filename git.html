@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Commande GIT et leur descriptions." />
+        <title>COMMANDES GIT</title>
+        <link rel="stylesheet" href="git.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo-git.png" alt="Logo GIT">
+            <h1>
+                <span class="lettre1">C</span><span class="lettre2">o</span><span class="lettre3">m</span><span class="lettre4">m</span><span class="lettre5">a</span><span class="lettre6">n</span><span class="lettre7">d</span><span class="lettre8">e</span><span class="lettre9">s</span>
+                <span class="lettre10">G</span><span class="lettre11">I</span><span class="lettre12">T</span>
+            </h1>
+        </header>
+        <main>   
+            <section>    
+                <h2> GIT a été développé par <a href="https://fr.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> en 2005. Il est aujourd’hui le système de gestion le plus performant et pertinent
+                    que de millions d’entreprises utilisent pour gérer efficacement leur code.</h2>
+            </section>   
+            <section>
+                <h3>Commandes GIT de base</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Commande</td>
+                            <td>Description</td>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Git config</th>
+                            <td>L’une des commandes git les plus utilisées est git config. On l’utilise pour configurer les préférences de l’utilisateur : son mail, l’algorithme utilisé pour diff, le nom d’utilisateur et le format de fichier etc. Par exemple, la commande suivante peut être utilisée pour définir le mail d’un utilisateur:
+                            git config --global user.email sam@google.com</td>
+                        </tr>
+                        <tr>
+                            <th>Git init</th>
+                            <td>La commande git add peut être utilisée pour ajouter des fichiers à l’index. Par exemple, la commande suivante ajoutera un fichier nommé temp.txt dans le répertoire local de l’index:
+                                git add temp.txt</td>
+                        </tr>
+                        <tr>
+                            <th>Clone git</th>
+                            <td>La commande git clone est utilisée pour la vérification des dépôts. Si le dépôt se trouve sur un serveur distant, utilisez:
+                                git clone alex@93.188.160.58:/chemin/vers/dépôt
+                                Inversement, si une copie de travail d’un dépôt local doit être créée, utilisez:
+                                git clone /chemin/vers/dépôt/</td>
+                        </tr>
+                        <tr>
+                            <th>Git commit</th>
+                            <td>La commande git commit permet de valider les modifications apportées au HEAD. Notez que tout commit ne se fera 
+                                pas dans le dépôt distant.
+                                git commit –m “Description du commit”</td>
+                        </tr>
+                        <tr>
+                            <th>Git status</th>
+                            <td>La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être 
+                                ajoutés ou validés. Usage:
+                                git status</td>    
+                        </tr>
+                        <tr>
+                            <th>Git push</th>
+                            <td>Git push est une autre commandes GIT de base. Un simple push envoie les modifications locales apportées à la 
+                                branche principale associée :
+                                git push origin master</td>    
+                        </tr>
+                        <tr>
+                            <th>Git checkout</th>
+                            <td>La commande git checkout peut être utilisée pour créer des branches ou pour basculer entre elles. Par exemple 
+                                nous allons créer une branche:
+                                command git checkout -b [nom-branche]
+                                Pour passer simplement d’une branche à une autre, utilisez:
+                                git checkout [nom-branche]</td>    
+                        </tr>
+                        <tr>
+                            <th>Git remote</th>
+                            <td>Cette commande remote permet à un utilisateur de se connecter à un dépôt distant. La commande suivante répertorie les dépôts distants actuellement configurés:
+                                git remote –v
+                                Cette commande permet à l’utilisateur de connecter le dépôt local à un serveur distant:
+                                git remote add origin [93.188.160.58]</td>    
+                        </tr>
+                        <tr>
+                            <th>Branche git</th>
+                            <td>La commande git branch peut être utilisée pour répertorier, créer ou supprimer des branches. Pour répertorier 
+                                toutes les branches présentes dans le dépôt, utilisez:
+                                git branch
+                                Pour supprimer une branche:
+                                git branch –d [nom-branche]</td>    
+                        </tr>
+                        <tr>
+                            <th>Git pull</th>
+                            <td>Pour fusionner toutes les modifications présentes sur le dépôt distant dans le répertoire de travail local, 
+                                la commande pull est utilisée. Usage:
+                                git pull</td>    
+                        </tr>
+                        <tr>
+                            <th>Git merge</th>
+                            <td>La commande git merge est utilisée pour fusionner une branche dans la branche active. Usage:
+                                git merge [nom-branche]</td>    
+                        </tr>
+                        <tr>
+                            <th>Git diff</th>
+                            <td>La commande git diff permet de lister les conflits. Pour visualiser les conflits d’un fichier, utilisez
+                                git diff --base [nom-fichier]
+                                La commande suivante est utilisée pour afficher les conflits entre les branches à fusionner avant de les fusionner:
+                                git diff [nom-branche] [nom-branche]
+                                Pour simplement énumérer tous les conflits actuels, utilisez:
+                                git diff</td>    
+                        </tr>
+                        <tr>
+                            <th>Git tag</th>
+                            <td>Le marquage est utilisé pour marquer des commits spécifiques avec des poignées simples. Un exemple peut être:
+                                git tag 1.1.0 [insert-commitID-here]</td>    
+                        </tr>
+                        <tr>
+                            <th>Git log</th>
+                            <td>Montre l'historique des versions pour la branche courante</td>    
+                        </tr>
+                        <tr>
+                            <th>Git reset</th>
+                            <td>Pour réinitialiser l’index et le répertoire de travail à l’état du dernier commit, la commande git reset est utilisée :
+                                git reset --hard HEAD</td>    
+                        </tr>
+                        <tr>
+                            <th>Git rm</th>
+                            <td>Git rm peut être utilisé pour supprimer des fichiers de l’index et du répertoire de travail. Usage:
+                                git rm nomfichier.txt</td>    
+                        </tr>
+                        <tr>
+                            <th>Git stash</th>
+                            <td>L’une des moins connues, git stash aide à enregistrer les changements qui ne doivent pas être commit immédiatement. C’est un commit temporaire. Usage:
+                                git stash</td>    
+                        </tr>
+                        <tr>
+                            <th>Git show</th>
+                            <td>Pour afficher des informations sur tout fichier git, utilisez la commande git show . Par exemple:
+                                git show</td>    
+                        </tr>
+                        <tr>
+                            <th>Git fetch</th>
+                            <td>Git fetch permet à un utilisateur d’extraire tous les fichiers du dépôt distant qui ne sont pas actuellement dans le répertoire de travail local. Exemple d’utilisation:
+                                git fetch origin</td>    
+                        </tr>
+                        <tr>
+                            <th>Git ls-tree</th>
+                            <td>Pour afficher un fichier arborescent avec le nom et le mode de chaque élément, et la valeur SHA-1 du blob, utilisez la commande git ls-tree . Par exemple:
+                                git ls-tree HEAD</td>    
+                        </tr>
+                        <tr>
+                            <th>Git cat-file</th>
+                            <td>À l’aide de la valeur SHA-1, affichez le type d’un fichier à l’aide de la commande git cat-file . Par exemple:
+                                git cat-file –p d670460b4b4aece5915caf5c68d12f560a9fe3e4</td>    
+                        </tr>
+                        <tr>
+                            <th>Git grep</th>
+                            <td>Git grep permet à un utilisateur de rechercher dans les arbres de contenu des expressions et / ou des mots. Par exemple, pour rechercher www.hostinger.com dans tous les fichiers, utilisez:
+                                git grep "www.hostinger.com"</td>    
+                        </tr>
+                        <tr>
+                            <th>Gitk</th>
+                            <td>Gitk est l’interface graphique du dépôt local. Vous pouvez l’appeler en exécutant:
+                                gitk</td>    
+                        </tr>
+                        <tr>
+                            <th>Git instaweb</th>
+                            <td>Avec la commande git instaweb , un serveur Web peut être exécuté par interface avec le dépôt local. Qui redirige directement vers un serveur web. Par exemple:
+                                git instaweb –httpd=webrick</td>    
+                        </tr><tr>
+                            <th>Git gc</th>
+                            <td>Pour optimiser le dépôt en supprimant les fichiers inutiles et les optimiser, utilisez:
+                                git gc</td>    
+                        </tr>
+                        <tr>
+                            <th>git archive</th>
+                            <td>La commande git archive permet à un utilisateur de créer un fichier zip ou tar contenant les composants d’un arbre du dépôt. Par exemple:
+                                git archive --format=tar master</td>    
+                        </tr>
+                        <tr>
+                            <th>Git prune</th>
+                            <td>Via la commande git prune , les fichiers qui n’ont pas de pointeurs entrants seront supprimés. Usage:
+                                git prune</td>    
+                        </tr>
+                        <tr>
+                            <th>Git fsck</th>
+                            <td>Pour effectuer une vérification d’intégrité du système de fichiers git, utilisez la commande git fsck . Tous les fichiers corrompus seront identifiés:
+                                git fsck</td>    
+                        </tr>
+                        <tr>
+                            <th>Git rebase</th>
+                            <td>La commande git rebase est utilisée pour la réapplication des commits sur une autre branche. Par exemple:
+                                git rebase master</td>    
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main> 
+        <footer><a href="#">Mentions légales - ©2021</a></footer>
+    </body>
+</html>

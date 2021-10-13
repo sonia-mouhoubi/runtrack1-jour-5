@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+body {
+    margin: 0;
+}
+a {
+	text-decoration: none;
+    font-size: 1;2em;
+    color: black;
+    font-weight: bold;
+}
+a:hover {
+    color: #1d1801;
+}
+
+/*=============================================================HEADER===*/
+header {
+    display: flex;
+   background-color: #1d1801;
+}
+h1 {
+    text-align: center;
+    padding: 1em;
+    font-size: 4em;
+    font-weight: bolder;
+    margin: auto;
+    color: #c09628;
+}
+
+/* ANIMATION LOGO GIT*/
+.logo {
+    background-image: url(img/logo-git.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 40%;
+    height: 100vh;  
+    animation-duration: 3s;
+    animation-name: logo;
+}
+@keyframes logo {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+/* FIN ANIMATION LOGO GIT*/
+
+/* ANIMATION LETTRES du H1*/
+
+h1 span {
+    opacity: 0;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.lettre1 {animation:lettres 2s ease 2s forwards;}
+.lettre2 {animation:lettres 2s ease 2.5s forwards;}
+.lettre3 {animation:lettres 2s ease 3s forwards;}
+.lettre4 {animation:lettres 2s ease 3.5s forwards;}
+.lettre5 {animation:lettres 2s ease 4s forwards;}
+.lettre6 {animation:lettres 2s ease 4.5s forwards;}
+.lettre7 {animation:lettres 2s ease 5s forwards;}
+.lettre8 {animation:lettres 2s ease 5.5s forwards;}
+.lettre9 {animation:lettres 2s ease 6s forwards;}
+.lettre10 {animation:lettres 2s ease 6.5s forwards;}
+.lettre11 {animation:lettres 2s ease 7s forwards;}
+.lettre12 {animation:lettres 2s ease 7.5s forwards;}
+
+@keyframes lettres {
+	0% {opacity:0;}
+	100% {opacity:1.0;}
+}
+/* FIN ANIMATION LETTRES du H1*/
+
+/*=============================================================MAIN===*/
+h2 {
+    padding: 3em;
+    width: 70%;
+    margin: auto;
+    font-weight: normal;
+}
+h2 a:hover {
+    color: #c09628;
+}
+h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #c09628;
+}
+/*===========================TABLEAU===*/
+table {
+    width: 70%;
+    margin: auto;
+    border : 2px solid #1d1801;
+    border-collapse: collapse; 
+}
+thead {
+    background-color: #c09628;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+th, td {
+    border : 2px solid #1d1801;
+    padding: 1em;
+}
+th {
+    color: #c09628;
+    font-size: 1.2em;
+}
+/*=============================================================FOOTER===*/
+footer {
+    padding: 2em;
+    text-align: center;
+    background-color: #c09628;
+    color: blanchedalmond;
+    margin-top: 2em;
+}
+footer a {
+   color: blanchedalmond;
+}
+
